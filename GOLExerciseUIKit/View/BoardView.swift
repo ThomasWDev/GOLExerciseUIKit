@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class GridView: UIView {
+public class BoardView: UIView {
     
     public var board: Board!
     ///The cellSize is what we’ll use to draw each cell on canvas
@@ -41,7 +41,7 @@ public class GridView: UIView {
     
     
     
-    public func updateNextGenerationByRules() {
+    public func makeBoard() {
         board.makeBoard()
         //board.step()
         self.setNeedsDisplay()
